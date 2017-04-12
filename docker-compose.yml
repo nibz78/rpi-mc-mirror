@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+
+ mc-mirror:
+      container_name: mirror
+      image: rpi-mc-mirror
+      restart: always 
+      volumes:
+       - /backup:/backup 
